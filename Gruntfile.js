@@ -14,21 +14,21 @@ module.exports = function(grunt) {
       files: {
         expand: true,
         src: ["css/*.css"],
-        dest: "dist/css"
+        dest: "dist/"
       }
     },
     uglify: {
       files: {
         expand: true,
         src: ["js/*.js"],
-        dest: "dist/js"
+        dest: "dist/"
       }
     },
-    copy:{
-      files:{
-        expand:true,
-        src:["img/*"],
-        dest:"dist/img"
+    copy: {
+      files: {
+        expand: true,
+        src: ["img/*"],
+        dest: "dist/"
       }
     }
   });
@@ -38,5 +38,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-copy");
 
-  grunt.registerTask("default", ["htmlmin", "cssmin", "uglify","copy"]);
+  grunt.registerTask("default", ["htmlmin", "cssmin", "uglify", "copy"]);
+  grunt.registerTask("styleMin", ["cssmin", "rev", "usemin"]);
 };
