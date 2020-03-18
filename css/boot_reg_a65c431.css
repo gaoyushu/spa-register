@@ -694,7 +694,7 @@ body {
 #nav .nav-2 {
   height: 20px;
   /* background: url(/static/passpc-account/img/reg/reg_hr.png) no-repeat center */
-    top;
+
 }
 .reg-content {
   float: left;
@@ -784,7 +784,7 @@ input::-ms-reveal {
   border: 1px solid #ddd;
   margin-right: 10px;
   /* background: url(/static/passpc-account/img/loading.gif) center center */
-    no-repeat;
+  
 }
 .tang-pass-reg .pass-form-item-verifyCode span,
 .tang-pass-reg .pass-form-item-verifyCodeSend span {
@@ -897,7 +897,7 @@ input::-ms-reveal {
   width: 16px;
   height: 16px;
   /* background: url(/static/passpc-account/img/reg/reg_icons.png) -32px -24px */
-    no-repeat;
+ 
   top: 12px;
   left: 398px;
   cursor: pointer;
@@ -1222,7 +1222,7 @@ input::-ms-reveal {
 }
 .tang-pass-reg .pass-item-error-password .pwd-strength-detail {
   /* background: url(/static/passpc-account/img/reg/reg_icons.png) -80px -24px */
-    no-repeat;
+
   padding-left: 20px;
   line-height: 16px;
   display: block;
@@ -1259,7 +1259,7 @@ input::-ms-reveal {
   height: 50px;
   line-height: 50px;
   /* background: url(/static/passpc-account/img/reg/phone.png) left center */
-    no-repeat;
+  
   border-bottom: 1px solid #e6edf2;
   font-size: 14px;
   color: #666;
@@ -1866,10 +1866,7 @@ a.mod-feedback {
   width: 417px;
   text-align: right;
 }
-.tang-pass-reg .pass-item-error-password .notsafe .pwd-strength-detail {
-  /* background: url(/static/passpc-account/img/reg/reg_icons.png) -80px -16px */
-    no-repeat;
-}
+
 .tang-pass-reg .pass-item-error-password .notsafe .pwd-strength-detail {
   margin-top: 5px;
 }

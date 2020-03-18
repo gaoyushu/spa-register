@@ -177,7 +177,7 @@ $(function(){
             $codebtn.attr("disabled",true);
             $codebtn.removeClass("pass-button-verifyCodeSend");
             $codebtn.addClass("pass-text-input-disabled");
-            var timer = setInterval(() => {
+            var timer = setInterval(function() {
                 if(num <= 0){
                     $codebtn.attr("disabled",false);
                     $codebtn.removeClass("pass-text-input-disabled");

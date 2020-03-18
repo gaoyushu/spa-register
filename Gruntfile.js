@@ -11,25 +11,32 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
-        files:{
-            src: ["src/*.css"],
-            dest: "dist/"
-        }
+      files: {
+        expand: true,
+        src: ["css/*.css"],
+        dest: "dist/css"
+      }
     },
     uglify: {
-      release: {
-        files:{
-            src: ["src/*.js"],
-            dest: "dist/"
-        }
+      files: {
+        expand: true,
+        src: ["js/*.js"],
+        dest: "dist/js"
+      }
+    },
+    copy:{
+      files:{
+        expand:true,
+        src:["img/*"],
+        dest:"dist/img"
       }
     }
   });
 
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-copy");
 
-  grunt.registerTask(['htmlmin', 'cssmin', 'uglify:release']);
-
+  grunt.registerTask("default", ["htmlmin", "cssmin", "uglify","copy"]);
 };
